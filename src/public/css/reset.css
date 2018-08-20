@@ -1,0 +1,67 @@
+@charset "utf-8";
+/*基础重置样式*/
+* {
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+		font: 12px "Microsoft Yahei";
+}
+
+body {
+		width: 100%;
+		margin: 0 auto;
+		box-sizing: border-box;
+}
+a{
+		text-decoration: none;
+		cursor: pointer;
+		color: #666;
+}
+a:hover{
+		color: #4d88c7;
+}
+ul,
+li,
+ol {
+		list-style: none;
+}
+
+img {
+		border: none;
+}
+iframe {
+		width: 100%;
+		display: block;
+}
+.left{
+		float: left;
+}
+.right{
+		float: right;
+}
+
+/* 常用样式 */
+
+/* 单行文本省略 */
+.single-line-omission{
+		overflow: hidden;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+}
+
+/* 多行文本省略 */
+.multiline-omission{
+		overflow: hidden;
+		display: -webkit-box;
+		-webkit-box-orient: vertical;
+		-webkit-line-clamp: 3; /* 限制块级元素显示的文本行数 */
+}
+
+/* 图片不可复制 */
+.non-replicable{
+		-webkit-user-select: none;
+		-ms-user-select: none;
+		-moz-user-select: none;
+		-khtml-user-select: none;
+		user-select: none;
+}
